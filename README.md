@@ -37,7 +37,7 @@ var defaultApp = admin.initializeApp({
 var db = defaultApp.database();
 ```
 #### Folder watchers
-Server side established folder watcher (fs.watch()) for each monitor configurtion received from Firebase:
+Server side established folder watcher (fs.watch()) for each monitor configuration received from Firebase:
 ```javascript
 db.ref('monitors').once('value', (snap) => {
     snap.forEach( (s) => {
